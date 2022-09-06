@@ -10,6 +10,7 @@ LABEL base.gitref="${BUILD_GIT_HEAD}"
 ARG TZ="Asia/Shanghai"
 
 ENV TZ $TZ
+ENV LANG en_US.UTF-8
 ENV SPRING_PROFILES_ACTIVE=prod
 ENV SERVER_PORT 8080
 ENV JAVA_OPTS -XX:MetaspaceSize=128m -XX:MaxMetaspaceSize=128m -Xms4096m -Xmx4096m -Xmn2g -Xss1024k -XX:SurvivorRatio=8 -XX:+UseConcMarkSweepGC
